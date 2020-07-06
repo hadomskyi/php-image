@@ -1,0 +1,10 @@
+version: '3'
+services:
+  php:
+    build: docker
+    restart: always
+    volumes:
+      - .:/var/www/webmasters
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal
+      PHP_IDE_CONFIG: serverName=localhost
