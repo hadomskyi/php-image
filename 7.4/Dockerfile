@@ -20,7 +20,6 @@ RUN chmod +x /usr/local/bin/phpcf
 
 RUN docker-php-ext-enable pdo
 RUN docker-php-ext-enable pdo_mysql
-RUN docker-php-ext-enable xdebug
 RUN docker-php-ext-enable redis.so
 RUN docker-php-ext-enable bcmath
 RUN docker-php-ext-enable bz2
